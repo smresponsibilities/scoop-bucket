@@ -1,0 +1,27 @@
+{
+    "version": "0.3.1",
+    "description": "Lightweight (~7.8 MB RAM) cross-platform desktop mascot engine in Rust with Multi-Pet Herd Mode, 2D/SVG Studio, and MCP server.",
+    "homepage": "https://shivammahajan.com/diypets/",
+    "license": "MIT|Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/smresponsibilities/diypets/releases/download/v0.3.1/diypets-x86_64-pc-windows-msvc.zip",
+            "hash": "d6203892ed5fa3f9f5410a9a5270adade2eb36114023bad16f06de1cd55dad8b"
+        }
+    },
+    "bin": [
+        "diypets-creator.exe",
+        "diypets-settings.exe",
+        "diypets.exe"
+    ],
+    "checkver": {
+        "github": "https://github.com/smresponsibilities/diypets"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/smresponsibilities/diypets/releases/download/v$version/diypets-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}
